@@ -1,0 +1,16 @@
+name: バグ報告
+description: ゲームの不具合
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 何が起きたか
+    validations:
+      required: true
+  - type: textarea
+    id: state
+    attributes:
+      label: セーブデータ（任意）
+      description: ブラウザの開発者ツールで `localStorage.getItem('chiba-sugoroku:save:v1')` の結果を貼ると再現できます
+      render: json

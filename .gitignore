@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+# 大きな元データはリポジトリに入れない（scripts/README 参照）
+data/raw/

@@ -1,0 +1,23 @@
+name: 町データの追加・修正
+description: マスにしてほしい町、物件のアイデア、座標の誤りなど
+labels: [data]
+body:
+  - type: input
+    id: town
+    attributes:
+      label: 町
+      placeholder: 例）市川市国府台
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 種類
+      options: [町を追加, 物件のアイデア, 座標・つながりの誤り, その他]
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 内容
+      description: 物件のアイデアは「名前・だいたいの価格・その町らしさ」を書いてもらえると助かります（実在の店名・企業名は避けてください）
